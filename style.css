@@ -1,0 +1,170 @@
+        body {
+                font-family: Jacques Francois, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #003000;
+                color: white;
+                overflow-x: hidden;
+            }
+            header {
+                text-align: center;
+                padding: 20px;
+                background-color: #003000;
+            }
+            header h1 {
+                font-size: 36px;
+                margin: 0;
+            }
+            header p{
+                font-size: 18px;
+                margin: 5px 0 0;
+            }
+            .image-block img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .columns {
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                max-width: 1200px;
+                margin: 20px auto;
+                text-align: left;
+            }
+            .column {
+                flex: 1;
+            }
+            .column:first-child ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            .column:nth-child(2) ul,
+            .column:nth-child(3) ul {
+                list-style-type: disc;
+                padding-left: 10px;
+            }
+            .column ul li {
+                margin: 10px 0;
+            }
+            .equipment-section,
+            .columns {
+                margin-bottom: 0;
+            }
+            .about-us {
+                padding: 40px 20px;
+                text-align: center;
+                background-color: #003000;
+                color: White;
+                margin-top: 20px;
+            }
+            .gallery {
+                padding: 40px 20px;
+                text-align: center;
+                background-color: #003000;
+                color: white;
+            }
+            .gallery h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .gallery-images {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            .gallery-item img {
+                max-width: 200px;
+                border-radius: 10px;
+            }
+            .gallery-item p {
+                margin-top: 10px;
+                font-size: 16px;
+            }
+            .faq {
+                padding: 40px 20px;
+                background-color: #003000;
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .faq h2 {
+                text-align: center;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .faq .question {
+                margin-bottom: 20px;
+            }
+            .faq .question p {
+                margin: 5px 0;
+            }
+            .testimonials {
+                padding: 40px 20px;
+                background-color: #003000;
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .testimonials h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .testimonial {
+                margin-bottom: 20px;
+            }
+            .testimonial p {
+                font-size: 16px;
+            }
+            .call-to-action {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .call-to-action button {
+                padding: 15px 30px;
+                font-size: 10px;
+                color: white;
+                background-color: #003300;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .call-to-action button:hover {
+                background-color: #003000;
+            }
+            .equipment-section {
+                background-color: #003000;
+                padding: 40px 20px;
+                text-align: center;
+                margin-top: 20px;
+                border-bottom: none;
+            }
+            .equipment-section h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .equipment-section img {
+                max-width: 400px;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+            .contact {
+                margin-top: 0;
+                text-align: center;
+                padding: 20px;
+                background-color: #003300;
+                border-bottom: nonr;
+            }
+            .contact p {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+                margin: 10px 0;
+            }
+            .contact i {
+                color: white;
+                font-size: 20px;
+            }
