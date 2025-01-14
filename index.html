@@ -8,7 +8,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
-        <header>
+        <header style="position: relative;">
+            <div class="logo-container">
+                <a href="index.html">
+                <img src="logo.png" alt="Dual Focus LLC Logo" class="logo">
+                </a>
+            </div>
             <h1>DUAL FOCUS LLC</h1>
             <p>Professional Furniture & Upholstery Cleaning</p>
         </header>
@@ -16,25 +21,29 @@
                 <img src="sofa.jpg" alt="Sofa Cleaning">
             </div>
             <div class="columns">
+                <div class="column-container">
                 <div class="column">
                 <ul>
-                    <li>Sofa and Upholstery Cleaning</li>
-                    <li>Carpet Stain Removal</li>
-                    <li>Mattress Deep Cleaning</li>
+                    <li>Professional sofa and upholstery cleaning</li>
+                    <li>Deep carpet stain removal</li>
+                    <li>Thorough mattress cleaning</li>
                 </ul>
+                </div>
             </div>
+            <div class="column-container"
             <div class="Column">
                 <ul>
-                    <li>Eco-friendly products</li>
+                    <li>High-quality cleaning agents</li>
                     <li>Fast and reliable service</li>
-                    <li>Guaranteed quality</li>
-                    <li>Affordable prices</li>
+                    <li>Exceptional results quaranteed</li>
+                    <li>Competitive pricing</li>
                 </ul>
+                </div>
             </div>
             </div>
             <div class="about-us">
                 <h2>About Us</h2>
-                <p>Dual Focus LLC is a trusted provider of professional furniture and upholstery cleaning services. With years of experience, modern equipment, and eco-friendly products, we ensureexceptional results every time. Choose us for a cleaner and healthier home!</p>
+                <p>Dual Focus LLC specializes in professional furniture and upholstery cleaning services. With years of experience, advanced equipment, and effective cleaning solutions, we deliver outstanding results. Trust us to refresh and protecr your home!</p>
             </div>
             <div class="gallery">
                 <h2>Our Work</h2>
@@ -59,7 +68,7 @@
                 <h2>Frequently Asked Questions</h2>
                 <div class="question">
                     <p><strong>What cleaning products do you use?</strong></p>
-                    <p>We use ec0-friendly and safe products to ensure the best results without harming your health or the environment.</p>
+                    <p>We use professional-grade cleaning products designed to deeply clean and protect your furniture and fabrics.</p>
                 </div>
                 <div class="question">
                     <p><strong>How long does it take for furniture to dry?</strong></p>
@@ -78,7 +87,20 @@
                 </div>
             </div>
             <div class="call-to-action">
-                <button>Call Us Now</button>
+                <button id="openModal">Request a Callback</button>
+            </div>
+            <div id="callbackModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times</span>
+                    <h2>Request a Callback</h2>
+                    <form id="callbackForm">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <label for="phone">Your Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         <div class="contact">
             <p>Contact Us</p>
@@ -86,5 +108,29 @@
             <p><i class="fas fa-envelope"></i>Email: dualfocusllc@gmail.com</p>
             <p><i class="fas fa-map-marker-alt"></i>Panama City Beach, Florida</p>
         </div>
+        <script>
+            const modal = document.getElementById('callbackModal');
+            const openModalButton = document.getElementById('openModal');
+            const closeModalButton = document.querySelector('.close');
+
+            openModalButton.addEventListener('click', function () {
+                modal.style.display = 'block';
+            });
+            closeModalButton.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+            window.addEventListener('click', function (event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            document.getElementById('callbackForm').addEventListener('submit', (event) => {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                alert('Thank you, ${name}! We will call you at ${phone}.');
+                modal.style.display = 'none';
+            });
+        </script>
     </body>
 </html>
