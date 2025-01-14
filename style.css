@@ -1,4 +1,4 @@
-        body {
+            body {
                 font-family: Jacques Francois, sans-serif;
                 margin: 0;
                 padding: 0;
@@ -12,11 +12,11 @@
                 background-color: #003000;
             }
             header h1 {
-                font-size: 36px;
+                font-size: 28px;
                 margin: 0;
             }
             header p{
-                font-size: 18px;
+                font-size: 14px;
                 margin: 5px 0 0;
             }
             .image-block img {
@@ -33,7 +33,7 @@
                 text-align: left;
             }
             .column {
-                flex: 1;
+                flex: 1 1 100%;
             }
             .column:first-child ul {
                 list-style-type: none;
@@ -71,10 +71,11 @@
             .gallery-images {
                 display: flex;
                 justify-content: center;
-                gap: 20px;
+                flex-direction: column;
+                gap: 10px;
             }
             .gallery-item img {
-                max-width: 200px;
+                max-width: 100%;
                 border-radius: 10px;
             }
             .gallery-item p {
@@ -122,12 +123,13 @@
             }
             .call-to-action button {
                 padding: 15px 30px;
-                font-size: 10px;
+                font-size: 16px;
                 color: white;
                 background-color: #003300;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
+                width: 100%;
             }
             .call-to-action button:hover {
                 background-color: #003000;
@@ -144,7 +146,7 @@
                 margin-bottom: 20px;
             }
             .equipment-section img {
-                max-width: 400px;
+                max-width: 100%;
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
