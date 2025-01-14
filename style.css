@@ -27,10 +27,11 @@
             .columns {
                 display: flex;
                 justify-content: space-between;
-                gap: 40px;
+                gap: 20px;
                 max-width: 1200px;
                 margin: 20px auto;
                 text-align: left;
+                padding: 0 15PX;
             }
             .column {
                 flex: 1 1 100%;
